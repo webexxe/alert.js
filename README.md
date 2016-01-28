@@ -1,4 +1,5 @@
 # alertJS Documantation
+[alert.js Demo](http://emretekin.com.tr/alert.js/)
 ## $.alertJS Use
 Variables : `$.alertJS(mode, message, status, close, id)`
 
