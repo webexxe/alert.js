@@ -1,0 +1,161 @@
+/*
+  Alert-JS Created by Tekin on 26.01.2016.
+ */
+
+div[id*="alertJS"] {
+  display: none;
+
+  // maskAlertFull Function Css
+  &.alertJS-mask {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.80);
+
+    & > .close,
+    & > .notClose {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 5;
+
+    }
+
+    .alertJS-content {
+      position: absolute;
+      z-index: 99;
+      box-sizing: content-box;
+      width: fit-content;
+      max-width: 70%;
+      min-width: 200px;
+      background: #fff;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 50%;
+      padding: 40px;
+
+      i.close {
+        position: absolute;
+        width: 40px;
+        line-height: 40px;
+        font-size: 22px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        right: 0;
+        top: 0;
+        cursor: pointer;
+      }
+
+      .alertJS-message {
+        line-height: 20px;
+        font-size: 16px;
+        max-width: 728px;
+
+        i.fa {
+          font-size: 24px;
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      &.info {
+        background-color: #03A9F4;
+        color: #fff;
+      }
+
+      &.error {
+        background-color: #F44336;
+        color: #fff;
+      }
+
+      &.success {
+        background-color: #4CAF50;
+        color: #fff;
+      }
+
+      &.alert {
+        background-color: #FFC107;
+        color: #fff;
+      }
+
+    }
+  }
+
+  &.alertJS-mini {
+    position: fixed;
+    z-index: 9999;
+    right: 30px;
+    bottom: 30px;
+
+    @media (max-width: 768px) {
+      & {
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    i.close {
+      position: absolute;
+      width: 30px;
+      line-height: 30px;
+      font-size: 18px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.1);
+      border: solid 1px rgba(0, 0, 0, 0.1);
+      right: 0;
+      top: 0;
+      cursor: pointer;
+    }
+
+    .alertJS-content {
+      padding: 30px;
+      min-width: 200px;
+      max-width: 728px;
+
+      .alertJS-message {
+        line-height: 20px;
+        font-size: 16px;
+
+        i.fa {
+          font-size: 24px;
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      &.info {
+        background-color: #03A9F4;
+        color: #fff;
+      }
+
+      &.error {
+        background-color: #F44336;
+        color: #fff;
+      }
+
+      &.success {
+        background-color: #4CAF50;
+        color: #fff;
+      }
+
+      &.alert {
+        background-color: #FFC107;
+        color: #fff;
+      }
+
+    }
+  }
+
+}
