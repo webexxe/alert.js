@@ -2,6 +2,39 @@
   Alert-JS Created by Tekin on 26.01.2016.
  */
 
+//OTHER-COLORS
+$blue: #006edd;
+$blueLL: lighten($blue,10%);
+$blueL: lighten($blue,5%);
+$blueD: darken($blue,5%);
+$blueDD: darken($blue,10%);
+
+$red: #f01e10;
+$redLL: lighten($red,10%);
+$redL: lighten($red,5%);
+$redD: darken($red,5%);
+$redDD: darken($red,10%);
+
+$orange: #ff560b;
+$orangeLL: lighten($orange,10%);
+$orangeL: lighten($orange,5%);
+$orangeD: darken($orange,5%);
+$orangeDD: darken($orange,10%);
+
+$yellow: #ffba00;
+$yellowLL: lighten($yellow,10%);
+$yellowL: lighten($yellow,5%);
+$yellowD: darken($yellow,5%);
+$yellowDD: darken($yellow,10%);
+
+$green: #1baf21;
+$greenLL: lighten($green,10%);
+$greenL: lighten($green,5%);
+$greenD: darken($green,5%);
+$greenDD: darken($green,10%);
+
+//ALERTJS STYLE
+
 div[id*="alertJS"] {
   display: none;
 
@@ -55,9 +88,10 @@ div[id*="alertJS"] {
       }
 
       .alertJS-message {
-        line-height: 20px;
+        line-height: 26px;
         font-size: 16px;
         max-width: 728px;
+        font-weight: 300;
 
         i.fa {
           font-size: 24px;
@@ -68,22 +102,22 @@ div[id*="alertJS"] {
       }
 
       &.info {
-        background-color: #03A9F4;
+        background-color: $blue;
         color: #fff;
       }
 
       &.error {
-        background-color: #F44336;
+        background-color: $red;
         color: #fff;
       }
 
       &.success {
-        background-color: #4CAF50;
+        background-color: $green;
         color: #fff;
       }
 
       &.alert {
-        background-color: #FFC107;
+        background-color: $yellow;
         color: #fff;
       }
 
@@ -124,8 +158,9 @@ div[id*="alertJS"] {
       max-width: 728px;
 
       .alertJS-message {
-        line-height: 20px;
+        line-height: 26px;
         font-size: 16px;
+        font-weight: 300;
 
         i.fa {
           font-size: 24px;
@@ -136,22 +171,22 @@ div[id*="alertJS"] {
       }
 
       &.info {
-        background-color: #03A9F4;
+        background-color: $blueL;
         color: #fff;
       }
 
       &.error {
-        background-color: #F44336;
+        background-color: $redL;
         color: #fff;
       }
 
       &.success {
-        background-color: #4CAF50;
+        background-color: $greenL;
         color: #fff;
       }
 
       &.alert {
-        background-color: #FFC107;
+        background-color: $yellowL;
         color: #fff;
       }
 

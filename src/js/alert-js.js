@@ -2,9 +2,6 @@
  * Alert-JS Created by Tekin on 26.01.2016.
  */
 
-//--------------------------------------------------------------------------------------------------------------------------------------//
-//Alert-JS | ALERT
-
 /**
  * @param mode      / string    -   default = "full"                -   "full", "mini"
  * @param message   / string    -   default = "Message Not Found!"  -
@@ -111,21 +108,6 @@ $.alertJS = function (mode, message, status, close, id) {
 };
 
 /**
- * @param id        / number    -   target id number
- */
-
-$.alertJSX = function (id) {
-    id = "alertJS-" + id;
-    $("#" + id).fadeOut(200);
-    setTimeout(function () {
-        $("#" + id).remove();
-    }, 300);
-};
-
-//--------------------------------------------------------------------------------------------------------------------------------------//
-//Alert-JS | LOAD ALERT
-
-/**
  * @param mode      / string    -   default = "full"                -   "full", "mini"
  * @param message   / string    -   default = "Message Not Found!"  -
  * @param id        / number    -   default = Random 0 - 10         -
@@ -143,4 +125,16 @@ $.alertJSLoad = function (mode, message, id, loadFigur, status) {
 
     // VARIABLE ROUTING
     $.alertJS(mode, message, status, 0, id);
+};
+
+/**
+ * @param id        / number    -   target id number
+ */
+
+$.alertJSX = function (id) {
+    id = "alertJS-" + id;
+    $("#" + id).fadeOut(200);
+    setTimeout(function () {
+        $("#" + id).remove();
+    }, 300);
 };
