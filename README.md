@@ -1,5 +1,6 @@
 # alertJS Documantation
 [alert.js Demo](http://emretekin.com.tr/alert.js/)
+
 ## $.alertJS Use
 Variables : `$.alertJS(mode, message, status, close, id)`
 
@@ -28,6 +29,24 @@ id        / number    -   default = Random 0 - 10         -
 loadFigur / string    -   default = "refresh"             -   "spinner", "circle-o-notch", "refresh", "cog"
 status    / string    -   default = "info"                -   "info", "error", "success", "alert"
 ```
+
+## $.alertJSC Use
+Variables : `$.alertJSC(message, jscFunction, jscText, close, id)`
+
+```javascript
+$.alertJSC("Tümünü silmek istediğinizden emin misiniz?", "alert(\"Silindi\")" , "Evet Sil", 1, 5)
+```
+```javascript
+onclikc='$.alertJSC("Tümünü silmek istediğinizden emin misiniz?", "alert(\"Silindi\")" , "Evet Sil", 1, 5)'
+```
+```javascript
+message       / string    -   default = "Message Not Found!"          -
+jscFunction   / string    -   default = "alert('jscFunction null')"   -
+jscText       / string    -   default = "Okey"						  -
+close         / number    -   default = 0                             -   0 = not close, 1 = close mask
+id            / number    -   default = Random 0 - 10                 -
+```
+
 ## $.alertJSX  Use
 Variables : `$.alertJSX(id)`
 

@@ -5,13 +5,9 @@ script(type='text/javascript').
 	window.location.href="http://www.google.com/intl/tr/chrome/";
 -->
 <html lang="tr">
-  <head>
+<head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <title> Alert JS Example </title>
-=======
-    <title>Alert JS Example</title>
->>>>>>> origin/master
+    <title> Alert JS Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,81 +16,118 @@ script(type='text/javascript').
     <meta name="keywords" content="">
     <meta name="Author" content="">
     <meta name="robots" content="index, follow">
-  </head>
-  <body>
-    <!--HEADER ALANI-->
-    <header id="header"></header>
-    <!--ICERIK ALANI -->
-    <main id="content">
-      <div class="container">
+</head>
+<body>
+<!--HEADER ALANI-->
+<header id="header"></header>
+<!--ICERIK ALANI -->
+<main id="content">
+    <div class="container">
         <div class="row">
-          <h1 class="col-xs-12 mb-30 pt-30">ALERT JS ÖRNEKLERİ</h1>
-          <div class="col-xs-12 mb-50 pt-10">
-            <h2 class="mb-15">$.alertJS Kullanımı</h2>
-            <p><b>$.alertJS()</b> fonksiyonu ile masıjımızı uyarı ekranında full veya mini olarak gösterebilirsiniz.</p>
-            <p>Aldığı değerler :<b> $.alertJS(mode, message, status, close, id)</b></p>
-            <pre>$.alertJS("mini", "Benim Mesajım", "success", 1, 5)</pre>
-            <pre>mode      / string    -   default = "full"                -   "full", "mini"
+            <h1 class="col-xs-12 mb-30 pt-30">ALERT JS ÖRNEKLERİ</h1>
+
+            <!-- ALERTJS EXAMPLE 1-->
+            <div class="col-xs-12 mb-50 pt-10">
+                <h2 class="mb-15">$.alertJS Kullanımı</h2>
+                <p><b>$.alertJS()</b> fonksiyonu ile masıjımızı uyarı ekranında full veya mini olarak gösterebilirsiniz.</p>
+                <p>Aldığı değerler :<b> $.alertJS(mode, message, status, close, id)</b></p>
+                <pre>$.alertJS("mini", "Benim Mesajım", "success", 1, 5)</pre>
+            <pre>
+mode      / string    -   default = "full"                -   "full", "mini"
 message   / string    -   default = "Message Not Found!"  -
 status    / string    -   default = "info"                -   "info", "error", "success", "alert"
 close     / number    -   default = 1                     -   0 = close function, 1 = close button, 2 = close button and mask
 close     / number    -   default = 1                     -   0 = close function, 1 = close button, 300 = auto close milisecond
-id        / number    -   default = Random 0 - 10         -</pre>
-            <div class="row">
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJS(&quot;full&quot;, &quot;Benim Mesajım&quot;)">Demo 1</button>
-              </div>
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJS(&quot;mini&quot;, &quot;Benim Mesajım&quot;, &quot;error&quot;, 3000)">Demo 2</button>
-              </div>
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJS(&quot;mini&quot;, &quot;Benim Mesajım&quot;, &quot;success&quot;, 1)">Demo 3</button>
-              </div>
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJS(&quot;full&quot;, &quot;Benim Mesajım, işlem bittiğinde $.alertJSX(id) fonksiyonu ile kapatılır&quot;, &quot;alert&quot;, 0, 5)">Demo 4</button>
-              </div>
+id        / number    -   default = Random 0 - 10         -
+            </pre>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJS('full', 'Benim Mesajım')">Demo 1</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJS('mini', 'Benim Mesajım', 'error', 3000)">Demo 2</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJS('mini', 'Benim Mesajım', 'success', 1)">Demo 3</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJS('full', 'Benim Mesajım, işlem bittiğinde $.alertJSX(id) fonksiyonu ile kapatılır', 'alert', 0, 5)">Demo 4</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-xs-12 mb-50 pt_10">
-            <h2 class="mb-15">$.alertJSLoad Kullanımı</h2>
-            <p><b>$.alertJSLoad()</b> fonksiyonu ile yükleme sırasında ekrana uyarı mesajı verebilirsiniz. Uyarıyı kapatmak için yapılan işlemden sonra<b> $.alertJSX()</b> fonksiyonunu kullanmanız gerekir.</p>
-            <p>Aldığı değerler :<b> $.alertJSLoad(mode, message, id, loadFigur, status)</b></p>
-            <pre>$.alertJSLoad("full", "Yükleniyor...", 5, "refresh", "info")</pre>
-            <pre>mode      / string    -   default = "full"                -   "full", "mini"
+
+            <!-- ALERTJS EXAMPLE 2-->
+            <div class="col-xs-12 mb-50 pt_10">
+                <h2 class="mb-15">$.alertJSLoad Kullanımı</h2>
+                <p><b>$.alertJSLoad()</b> fonksiyonu ile yükleme sırasında ekrana uyarı mesajı verebilirsiniz. Uyarıyı kapatmak için yapılan işlemden sonra<b> $.alertJSX()</b> fonksiyonunu
+                    kullanmanız gerekir.</p>
+                <p>Aldığı değerler :<b> $.alertJSLoad(mode, message, id, loadFigur, status)</b></p>
+                <pre>$.alertJSLoad("full", "Yükleniyor...", 5, "refresh", "info")</pre>
+            <pre>
+mode      / string    -   default = "full"                -   "full", "mini"
 message   / string    -   default = "Message Not Found!"  -
 id        / number    -   default = Random 0 - 10         -
 loadFigur / string    -   default = "refresh"             -   "spinner", "circle-o-notch", "refresh", "cog"
-status    / string    -   default = "info"                -   "info", "error", "success", "alert"</pre>
-            <div class="row">
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJSLoad(&quot;full&quot;, &quot;Yükleme Devam Ediyor...&quot;)">Demo 1</button>
-              </div>
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJSLoad(&quot;mini&quot;, &quot;Yükleme Devam Ediyor...&quot;, 5, &quot;refresh&quot;, &quot;info&quot;)">Demo 2</button>
-              </div>
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJSLoad(&quot;mini&quot;, &quot;Yükleme Devam Ediyor...&quot;, 5, &quot;spinner&quot;, &quot;error&quot;)">Demo 3</button>
-              </div>
-              <div class="col-xs-6 col-md-3 mb-10">
-                <button onclick="$.alertJSLoad(&quot;full&quot;, &quot;Yükleme Devam Ediyor...&quot;, 5, &quot;circle-o-notch&quot;)">Demo 4</button>
-              </div>
+status    / string    -   default = "info"                -   "info", "error", "success", "alert"
+            </pre>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJSLoad('full', 'Yükleme Devam Ediyor...')">Demo 1</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJSLoad('mini', 'Yükleme Devam Ediyor...', 5, 'refresh', 'info')">Demo 2</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJSLoad('mini', 'Yükleme Devam Ediyor...', 5, 'spinner', 'error')">Demo 3</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick="$.alertJSLoad('full', 'Yükleme Devam Ediyor...', 5, 'circle-o-notch')">Demo 4</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-xs-12 mb-50 pt_10">
-            <h2 class="mb-15">$.alertJSX Kullanımı</h2>
-            <p><b>$.alertJSX()</b> fonksiyonu ile uyarılarınızı işlem bittiğinde kapatabilirsiniz.</p>
-            <p>Aldığı değerler :<b> $.alertJSX(id)</b></p>
-            <pre>$.alertJSX(5)</pre>
-            <pre>id        / number    -   target id number</pre>
-          </div>
+
+            <!-- ALERTJS EXAMPLE 3-->
+            <div class="col-xs-12 mb-50 pt_10">
+                <h2 class="mb-15">$.alertJSC Kullanımı</h2>
+                <p><b>$.alertJSC()</b> fonksiyonu ile kullanıcıya yapılması gerekeni sorabilirsiniz.</p>
+                <p>Aldığı değerler :<b> $.alertJSC(message, jscFunction, jscText, close, id)</b></p>
+                <pre>$.alertJSC("Tümünü silmek istediğinizden emin misiniz?", "alert(\"Silindi\")" , "Evet Sil", 1, 5)</pre>
+                <p>onclick kullanımında : </p>
+                <pre>onclikc='$.alertJSC("Tümünü silmek istediğinizden emin misiniz?", "alert(\"Silindi\")" , "Evet Sil", 1, 5)'</pre>
+            <pre>
+message       / string    -   default = "Message Not Found!"          -
+jscFunction   / string    -   default = "alert('jscFunction null')"   -
+jscText       / string    -   default = "Okey"						  -
+close         / number    -   default = 0                             -   0 = not close, 1 = close mask
+id            / number    -   default = Random 0 - 10                 -
+            </pre>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick='$.alertJSC("Tümünü silmek istediğinizden emin misiniz?", "alert(\"Silindi\")" , "Evet Sil", 0, 5)'>Demo 1</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb-10">
+                        <button onclick='$.alertJSC("Fatura adresiniz silinecektir!", "alert(\"Silindi\")" , "Tamam", 1, 5)'>Demo 2</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALERTJS EXAMPLE 4-->
+            <div class="col-xs-12 mb-50 pt_10">
+                <h2 class="mb-15">$.alertJSX Kullanımı</h2>
+                <p><b>$.alertJSX()</b> fonksiyonu ile uyarılarınızı işlem bittiğinde kapatabilirsiniz.</p>
+                <p>Aldığı değerler :<b> $.alertJSX(id)</b></p>
+                <pre>$.alertJSX(5)</pre>
+                <pre>id        / number    -   target id number</pre>
+            </div>
+
         </div>
-      </div>
-    </main>
-    <!--FOOTER -->
-    <footer id="footer"></footer>
-    <!--JS IMPORT -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/alert-js.min.js"></script>
-  </body>
+    </div>
+</main>
+<!--FOOTER -->
+<footer id="footer"></footer>
+<!--JS IMPORT -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/alert-js.min.js"></script>
+</body>
 </html>
