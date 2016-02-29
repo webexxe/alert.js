@@ -26,7 +26,7 @@ $.alertJSLoad("full", "Yükleniyor...", 5, "refresh", "info")
 mode      / string    -   default = "full"                -   "full", "mini"
 message   / string    -   default = "Message Not Found!"  -
 id        / number    -   default = Random 0 - 10         -
-loadFigur / string    -   default = "refresh"             -   "spinner", "circle-o-notch", "refresh", "cog"
+loadFigur / string    -   default = "refresh"             -   "arrow", "arrows", "arrows-1", "arrows-2", "circle", "load", "sign", "web"
 status    / string    -   default = "info"                -   "info", "error", "success", "alert"
 ```
 

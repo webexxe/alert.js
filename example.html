@@ -9,7 +9,8 @@ script(type='text/javascript').
     <meta charset="UTF-8">
     <title> Alert JS Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/alert-js.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- SEO META -->
     <meta name="description" content="">
@@ -67,7 +68,7 @@ id        / number    -   default = Random 0 - 10         -
 mode      / string    -   default = "full"                -   "full", "mini"
 message   / string    -   default = "Message Not Found!"  -
 id        / number    -   default = Random 0 - 10         -
-loadFigur / string    -   default = "refresh"             -   "spinner", "circle-o-notch", "refresh", "cog"
+loadFigur / string    -   default = "refresh"             -   "arrow", "arrows", "arrows-1", "arrows-2", "circle", "load", "sign", "web"
 status    / string    -   default = "info"                -   "info", "error", "success", "alert"
             </pre>
                 <div class="row">
@@ -75,13 +76,13 @@ status    / string    -   default = "info"                -   "info", "error", "
                         <button onclick="$.alertJSLoad('full', 'Yükleme Devam Ediyor...')">Demo 1</button>
                     </div>
                     <div class="col-xs-6 col-md-3 mb-10">
-                        <button onclick="$.alertJSLoad('mini', 'Yükleme Devam Ediyor...', 5, 'refresh', 'info')">Demo 2</button>
+                        <button onclick="$.alertJSLoad('mini', 'Yükleme Devam Ediyor...', 5, 'arrow', 'info')">Demo 2</button>
                     </div>
                     <div class="col-xs-6 col-md-3 mb-10">
-                        <button onclick="$.alertJSLoad('mini', 'Yükleme Devam Ediyor...', 5, 'spinner', 'error')">Demo 3</button>
+                        <button onclick="$.alertJSLoad('mini', 'Yükleme Devam Ediyor...', 5, 'web', 'error')">Demo 3</button>
                     </div>
                     <div class="col-xs-6 col-md-3 mb-10">
-                        <button onclick="$.alertJSLoad('full', 'Yükleme Devam Ediyor...', 5, 'circle-o-notch')">Demo 4</button>
+                        <button onclick="$.alertJSLoad('full', 'Yükleme Devam Ediyor...', 5, 'arrows-1')">Demo 4</button>
                     </div>
                 </div>
             </div>
